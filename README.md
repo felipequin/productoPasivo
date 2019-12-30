@@ -11,6 +11,8 @@ El segundo formulario llamado crear-cuenta se encarga de la toma de los datos pa
 
 los dos formularios cuentan con web responsive.
 
+Recuerde que antes de iniciar a probar y a trabajar con el codigo es necesario descargar los paquetes necesarios que requiere el proyecto, dirijase a la ruta raiz del proyecto y ejecute el comando `npm install` se iniciara la descarga de las dependencias configuradas en el archivo package.json
+
 ## Servidor de Desarrollo
 
 Ejecute `ng serve` en su instancia de Angular, se iniciara el proyecto navegue hasta la ruta `http://localhost:4200/` si se realiza alguna modificacion, angular recomilara los archivos y refrescara la pagina.
