@@ -1,0 +1,50 @@
+<div class="card bg-danger text-white">
+    <div class="card-header">{{ title }}</div>
+    <div class="card-body">
+    <form>
+        <div class="form-group row">
+            <label for="tipoIdentitular" class="col-form-label col-sm-2 col-md-2">Tipo Identificación</label>
+                <div class="col-ms-6 col-md-3">
+                    <select type="text" class="form-control" name="tipoIdentitular" [(ngModel)]="account.tipoIdentitular">
+                        <option *ngFor="let tident of tipoidents" [ngValue]="tident.id">{{tident.name}}</option>
+                      </select>
+                </div>
+                <label for="Identitular" class="col-form-label col-sm-2 col-md-2">Identificación</label>
+                <div class="col-ms-6 col-md-3">
+                    <input type="text" class="form-control" [(ngModel)]="account.Identitular" name="Identitular">
+                </div>
+        </div>
+                <div class="form-group row">
+                <label for="tipoCta" class="col-form-label col-sm-2 col-md-2">tipo de cuenta</label>
+                    <div class="col-ms-6 col-md-3">
+                        <select type="text" class="form-control" name="tipoCta" [(ngModel)]="account.tipoCta">
+                            <option *ngFor="let tipcuent of tipocuentas" [ngValue]="tipcuent.id">{{tipcuent.name}}</option>
+                          </select>
+                    </div>
+                    <label for="saldo" class="col-form-label col-sm-2 col-md-2">saldo</label>
+                    <div class="col-ms-6 col-md-3">
+                        <input type="text" class="form-control" [(ngModel)]="account.saldo" name="saldo">
+                    </div>
+            </div>
+            <div class="form-group row">
+                <label for="ctaExonera" class="col-form-label col-sm-2 col-md-2">Exonerada 4x1000</label>
+                    <div class="col-ms-6 col-md-3 ">
+                        <label class="radioseparator"><input type="radio" class="" value="SI" name="ctaExonera" [(ngModel)]="account.ctaExonera" >SI</label>
+                        <label><input type="radio" class="" value="NO" name="ctaExonera" [(ngModel)]="account.ctaExonera" >NO</label>
+                    </div>
+                    <label for="medioManejo" class="col-form-label col-sm-2 col-md-2">Medio de Manejo</label>
+                    <div class="col-ms-6 col-md-3">
+                        <input type="text" class="form-control" [(ngModel)]="account.medioManejo" name="medioManejo">
+                    </div>
+            </div>
+            <div class="form-group row">
+                    <div class="col-ms-6  col-md-3">
+                    <button class="btn btn-primary" role="button" (click)='create()' *ngIf="!account.id else elseBlock">Crear</button>
+                    <ng-template #elseBlock>
+                    <button class="btn btn-primary" role="button" (click)='update()'>Editar</button>
+                    </ng-template>
+                    </div>
+            </div>
+    </form>
+</div>
+</div>

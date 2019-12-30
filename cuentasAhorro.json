@@ -1,0 +1,68 @@
+{
+  "cuentas": [
+    {
+      "tipoIdentitular": "Cedula de Extranjeria",
+      "Identitular": "1010174450",
+      "tipoCta": "Paquete Gold",
+      "saldo": "900000",
+      "ctaExonera": "NO",
+      "medioManejo": "Tarjeta Debito",
+      "id": "6411010172937101"
+    },
+    {
+      "tipoIdentitular": "Cedula de Extranjeria",
+      "Identitular": "1010174450",
+      "tipoCta": "Paquete Pro",
+      "saldo": "100000",
+      "ctaExonera": "SI",
+      "medioManejo": "Tarjeta Debito",
+      "id": "6411010171851409"
+    },
+    {
+      "ctaExonera": "SI",
+      "tipoIdentitular": "Cedula de Ciudadania",
+      "tipoCta": "Paquete Pro",
+      "Identitular": "1010174460",
+      "saldo": "60000",
+      "medioManejo": "Tarjeta Debito",
+      "id": "6411010171360719"
+    }
+  ],
+  "catalogos": [
+    {
+      "id": "Cedula de Ciudadania",
+      "name": "Cedula de Ciudadania",
+      "catalogo": "TipoIdent"
+    },
+    {
+      "id": "Cedula de Extranjeria",
+      "name": "Cedula de Extranjeria",
+      "catalogo": "TipoIdent"
+    },
+    {
+      "id": "Registro Civil",
+      "name": "Registro Civil",
+      "catalogo": "TipoIdent"
+    },
+    {
+      "id": "Paquete simple",
+      "name": "Paquete simple",
+      "catalogo": "TipoCuenta"
+    },
+    {
+      "id": "Paquete Pro",
+      "name": "Paquete Pro",
+      "catalogo": "TipoCuenta"
+    },
+    {
+      "id": "Paquete Gold",
+      "name": "Paquete Gold",
+      "catalogo": "TipoCuenta"
+    },
+    {
+      "id": "Paquete Diamond",
+      "name": "Paquete Diamond",
+      "catalogo": "TipoCuenta"
+    }
+  ]
+}

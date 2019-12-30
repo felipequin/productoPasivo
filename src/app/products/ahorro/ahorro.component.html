@@ -1,0 +1,49 @@
+<div class="card border-primary mb-3">
+    <div class="card-header">Cuentas</div>
+    <div class="card-body text-primary">
+      <h5 class="card-title">Listado de Cuentas del Cliente</h5>
+      <div class="my-2 text-left">
+        <button class="btn btn-rounded btn-primary" type="button" [routerLink]="['/ahorro/crearCuenta']">
+          Crear Cuenta
+        </button>
+      </div>
+      <div class="table-responsive-md">   
+        <div *ngIf="accounts?.length==0" class="alert alert-info">
+            Oficina sin cuentas radicadas, inicie la creación de una nueva.
+          </div> 
+      <table class="table table-bordered table-striped" *ngIf="accounts?.length>0">
+        <thead>
+          <tr>
+            <th>Tipo de Cuenta</th>
+            <th>Numero de Cuenta</th>
+            <th>Identificación Titular</th>
+            <th>saldo</th>
+            <th>Exonerada 4*1000</th>
+            <th>Medio de Manejo</th>
+            <th>
+              Modificar
+            </th>
+            <th>eliminar Cuenta</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let account of accounts">
+            <td>{{ account.tipoCta}}</td>
+            <td>{{ account.id }}</td>
+            <td>{{ account.tipoIdentitular}} - {{ account.Identitular}}</td>
+            <td>{{ account.saldo}}</td>
+            <td>{{ account.ctaExonera }}</td>
+            <td>{{ account.medioManejo }}</td>
+            <td>
+              <a type="button"  name="editar" [routerLink]="['/ahorro/crearCuenta', account.id]" class="fa fa-edit fa-2x"></a>
+            </td>
+            <td>
+              <a type="button" name="eliminar" (click)='delete(account)'  class="fa fa-trash fa-2x"></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </div>
+  </div>
+  
