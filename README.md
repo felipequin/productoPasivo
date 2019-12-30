@@ -1,27 +1,34 @@
-# Pasivo
+# Pasivo (Cuentas de Ahorro)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
+Este Proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
+se hizo uso de las librerias de bootstrap para diseño del formulario, font-awesome para los iconos y sweetalert2 para las alertas.
+Se realizo el mock de los servicios con json-server.
 
-## Development server
+Consta de un modulo principal llamado ahorro donde se visualizan las cuentas creadas permitiendo su modificación y eliminación y/o
+Creación.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+El segundo formulario llamado crear-cuenta se encarga de la toma de los datos para aperturar la cuenta y de su respectiva modificación.
 
-## Code scaffolding
+los dos formularios cuentan con web responsive.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Servidor de Desarrollo
+
+Ejecute `ng serve` en su instancia de Angular, se iniciara el proyecto navegue hasta la ruta `http://localhost:4200/` si se realiza alguna modificacion, angular recomilara los archivos y refrescara la pagina.
+
+Ejecute 'json-server --watch "cuentasAhorro.json"' en la carpeta raiz del proyecto angular, este comando levantara los servicios mock de la aplicacion.
+
+## Generación de Codigo
+
+Ejecute `ng generate component component-name` para generar nuevos componentes. tambien puede usar los siguientes comandos `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+ejecute `ng build` para compilar el proyecto . la compilación de los artefactos se guardara por defecto en el directorio `dist/` . Use el comando `--prod` para generar una compilación productiva.
 
-## Running unit tests
+## Ejecución de pruebas unitarias
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Ejecute  `ng test` para ejecutar las pruebas unitarias con [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Ayudas y Preguntas
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Puede visualizar a documentacion de Angular con el comando `ng help` o ir a la pagina de angular [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
